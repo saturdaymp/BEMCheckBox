@@ -1,6 +1,7 @@
 # BEMCheckBox
 [![CI](https://github.com/saturdaymp/BEMCheckBox/actions/workflows/ci.yml/badge.svg)](https://github.com/saturdaymp/BEMCheckBox/actions/workflows/ci.yml)
 [![Release Notes](https://github.com/saturdaymp/BEMCheckBox/actions/workflows/release-notes.yml/badge.svg)](https://github.com/saturdaymp/BEMCheckBox/actions/workflows/release-notes.yml)
+[![GitHub Sponsors](https://img.shields.io/github/sponsors/saturdaymp?label=Sponsors&logo=githubsponsors&labelColor=3C444C)](https://github.com/sponsors/saturdaymp)
 
 <p align="center"><img src="./.assets/BEMCheckBox logo.jpg"/></p>	
 

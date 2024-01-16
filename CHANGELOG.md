@@ -3,7 +3,12 @@
 
 As part of this release we had [5 issues](https://github.com/saturdaymp/BEMCheckBox/milestone/1?closed=1) closed.
 
+This release has the following breaking changes:
 
+- Minimum iOS version was increased from 8.4 to 12.
+- Events renamed 
+  -  `didTapCheckBox` renamed to `didTap`
+  - `animationDidStopCheckBox` to `animationDidStopFor`
 
 __Breaking__
 
@@ -19,6 +24,10 @@ __Documentation__
 
 - [__#5__](https://github.com/saturdaymp/BEMCheckBox/pull/5) Update release note for v2.0.0 release
 
+## 1.4.1 (May, 16, 2017)
+
+
+This is the last official release from [Boris-Em](https://github.com/Boris-Em).  Please check out the original [repo](https://github.com/Boris-Em/BEMCheckBox) for more details.
 ## 1.1.0 (Oct, 17, 2015)
 
 
