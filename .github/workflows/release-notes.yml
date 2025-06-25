@@ -9,7 +9,7 @@ on:
 jobs:
   generate-release-notes:
     name: Generate Release Notes
-    runs-on: macos-13
+    runs-on: macos-14
 
     steps:
       - name: Checkout
