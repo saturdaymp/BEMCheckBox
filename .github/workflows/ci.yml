@@ -9,11 +9,11 @@ on:
 
 jobs:
   build:
-    runs-on: macos-13
+    runs-on: macos-15
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0 # Required for Calculate Version step (e.g. GitVersion)
 
@@ -83,7 +83,7 @@ jobs:
       # Upload the directory, not a zip file, as uploading an artificate will automatically zip it
       # and we don't want a zip in a zip.
       - name: Upload Build Artificates to GitHub Workflow
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: BEMCheckBox-v${{ steps.gitversion.outputs.majorMinorPatch }}.framework
           path: Release-fat/BEMCheckBox.framework
