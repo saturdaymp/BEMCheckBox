@@ -20,6 +20,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0 # Required for Calculate Version step (e.g. GitVersion)
+          token: ${{ secrets.PAT || secrets.GITHUB_TOKEN }} # So we can commit to protected branches.
 
       - name: Install GitVersion
         uses: gittools/actions/gitversion/setup@51d325634925d7d9ce0a7efc2c586c0bc2b9eee6 #v3.2.1
@@ -52,7 +53,7 @@ jobs:
           cat CHANGELOG.md
 
       - name: 'Commit Change Log if it Changed'
-        uses: stefanzweifel/git-auto-commit-action@v4
+        uses: stefanzweifel/git-auto-commit-action@v6
         with:
           commit_message: Committing auto generated change log.
           file_pattern: CHANGELOG.md
