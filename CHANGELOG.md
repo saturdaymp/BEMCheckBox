@@ -1,13 +1,12 @@
 ## v2.1.0 (Jan, 16, 2024)
 
 
-As part of this release we had [2 issues](https://github.com/saturdaymp/BEMCheckBox/milestone/2?closed=1) closed.
+As part of this release we had [1 issue](https://github.com/saturdaymp/BEMCheckBox/milestone/2?closed=1) closed.
 
 
 
 __DevOps__
 
-- [__#10__](https://github.com/saturdaymp/BEMCheckBox/issues/10) Add sponsorship button and badge
 - [__!12__](https://github.com/saturdaymp/BEMCheckBox/pull/12) Update macOS and GitHub Action Versions in CI
 
 ## v2.0.0 (Aug, 3, 2023)
@@ -46,6 +45,11 @@ This is the last official release from [Boris-Em](https://github.com/Boris-Em). 
 [Full Changelog](https://github.com/Boris-Em/BEMCheckBox/compare/1.0.0...1.1.0)
  
 Added new delegate and BEMCheckBoxDelegate protocol used to receive check box events.
+## 1.0.0 (Oct, 10, 2015)
+
+
+First stable release of **BEMCheckBox**
+sed to receive check box events.
 ## 1.0.0 (Oct, 10, 2015)
 
 
