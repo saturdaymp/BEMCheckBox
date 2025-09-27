@@ -7,8 +7,8 @@ BEMCheckBox is an open-source iOS checkbox library that provides beautiful, high
 ### Key Technologies
 - **Main Library**: Written in Swift
 - **Example Project**: Written in Objective-C
-- **Minimum iOS Version**: iOS 12
-- **Swift Tools Version**: 5.1+
+- **Minimum iOS Version**: iOS 18
+- **Swift Tools Version**: 6.0+
 
 ## Project Structure
 
@@ -138,8 +138,8 @@ Copy the `Classes` folder directly into your Xcode project
 
 ### Requirements
 - Xcode 14+ (recommended)
-- iOS 12.0+ deployment target
-- Swift 5.1+
+- iOS 18.0+ deployment target
+- Swift 6.0+
 - macOS for development
 
 ### Schemes and Targets
