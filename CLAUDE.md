@@ -60,16 +60,62 @@ xcodebuild -sdk iphonesimulator \
 
 #### Using Swift Package Manager
 
+**Note**: Building with Swift Package Manager for iOS requires explicit SDK paths and target specifications since this is an iOS-only library.
+
+##### iOS Simulator (x86_64)
+
 ```bash
-# Build the package
-swift build
+# Debug build for iOS Simulator
+swift build \
+  --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.0.sdk \
+  -Xswiftc -target \
+  -Xswiftc x86_64-apple-ios18.0-simulator \
+  -Xswiftc -swift-version \
+  -Xswiftc 5
 
-# Run tests
-swift test
-
-# Build for release
-swift build -c release
+# Release build for iOS Simulator
+swift build -c release \
+  --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.0.sdk \
+  -Xswiftc -target \
+  -Xswiftc x86_64-apple-ios18.0-simulator \
+  -Xswiftc -swift-version \
+  -Xswiftc 5
 ```
+
+##### iOS Device (arm64)
+
+```bash
+# Debug build for iOS Device
+swift build \
+  --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk \
+  -Xswiftc -target \
+  -Xswiftc arm64-apple-ios18.0 \
+  -Xswiftc -swift-version \
+  -Xswiftc 5
+
+# Release build for iOS Device
+swift build -c release \
+  --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk \
+  -Xswiftc -target \
+  -Xswiftc arm64-apple-ios18.0 \
+  -Xswiftc -swift-version \
+  -Xswiftc 5
+```
+
+##### Build Artifacts
+
+Build artifacts are located in:
+- **Debug builds**: `.build/debug/`
+- **Release builds**: `.build/release/`
+- **Swift modules**: `BEMCheckBox.swiftmodule`
+- **Documentation**: `BEMCheckBox.swiftdoc`
+
+##### Important Notes for Swift Package Manager
+
+1. **Swift Version**: Uses Swift 5 language mode to avoid Swift 6 strict concurrency issues
+2. **SDK Versions**: Update SDK paths if using different Xcode versions (check with `xcodebuild -showsdks`)
+3. **No Tests**: Swift Package Manager tests are not available as this is an iOS-only library requiring simulator/device
+4. **Architecture**: Specify target architecture explicitly for each platform
 
 ### Creating a Fat Binary Framework
 
