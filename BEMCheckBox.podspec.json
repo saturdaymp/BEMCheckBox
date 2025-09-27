@@ -15,7 +15,7 @@
     "Boris Emorine": "boris.emorine@gmail.com"
   },
   "platforms": {
-    "ios": "7.0"
+    "ios": "18.0"
   },
   "requires_arc": true,
   "source": {

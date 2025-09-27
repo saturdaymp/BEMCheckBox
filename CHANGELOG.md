@@ -1,3 +1,14 @@
+## v3.0.0 (TBD)
+
+This release has the following breaking changes:
+
+- Minimum iOS version was increased from 12 to 18.
+- Swift Tools Version updated from 5.1 to 6.0 to support iOS 18.
+
+__Breaking__
+
+- Update minimum iOS version from 12 to 18 across all configuration files and documentation
+
 ## v2.1.0 (Jan, 16, 2024)
 
 
