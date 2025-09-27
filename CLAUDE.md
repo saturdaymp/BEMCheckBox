@@ -141,19 +141,95 @@ lipo -info Release-fat/BEMCheckBox.framework/BEMCheckBox
 
 ## Running Tests
 
+The project includes two test suites:
+- **CheckBoxTests**: Unit tests for the BEMCheckBox framework
+- **CheckBoxUITests**: UI tests for the sample application (currently failing)
+
+### Prerequisites
+- iOS Simulator with iOS 18.0+ (recommended: iPhone 14 or newer)
+- Xcode 14+ with command line tools
+
+### Running Unit Tests
+
 ```bash
-# Run unit tests
+# Run all unit tests
 xcodebuild test \
   -project "Sample Project/CheckBox.xcodeproj" \
   -scheme CheckBoxTests \
   -destination 'platform=iOS Simulator,name=iPhone 14'
 
-# Run UI tests
+# Run unit tests on a specific iOS version
+xcodebuild test \
+  -project "Sample Project/CheckBox.xcodeproj" \
+  -scheme CheckBoxTests \
+  -destination 'platform=iOS Simulator,name=iPhone 16,OS=18.5'
+
+# Run a specific test class
+xcodebuild test \
+  -project "Sample Project/CheckBox.xcodeproj" \
+  -scheme CheckBoxTests \
+  -destination 'platform=iOS Simulator,name=iPhone 14' \
+  -only-testing:CheckBoxTests/CheckBoxTests
+
+# Run a specific test method
+xcodebuild test \
+  -project "Sample Project/CheckBox.xcodeproj" \
+  -scheme CheckBoxTests \
+  -destination 'platform=iOS Simulator,name=iPhone 14' \
+  -only-testing:CheckBoxTests/CheckBoxTests/test_frame
+```
+
+### Running UI Tests
+
+**⚠️ Note**: The UI tests are currently failing and will need to be fixed in a future update.
+
+```bash
+# Run all UI tests (using CheckBox scheme which includes UI tests)
+xcodebuild test \
+  -project "Sample Project/CheckBox.xcodeproj" \
+  -scheme CheckBox \
+  -destination 'platform=iOS Simulator,name=iPhone 14' \
+  -only-testing:CheckBoxUITests
+
+# Alternative: Run UI tests directly (may not work due to current issues)
 xcodebuild test \
   -project "Sample Project/CheckBox.xcodeproj" \
   -scheme CheckBoxUITests \
   -destination 'platform=iOS Simulator,name=iPhone 14'
 ```
+
+### Running All Tests
+
+```bash
+# Run both unit and UI tests together
+xcodebuild test \
+  -project "Sample Project/CheckBox.xcodeproj" \
+  -scheme CheckBox \
+  -destination 'platform=iOS Simulator,name=iPhone 14'
+```
+
+### Test Results and Debugging
+
+- Test results are output to the console in real-time
+- For more detailed output, add `-verbose` flag to any xcodebuild command
+- Test results bundles are saved to `/tmp/` for further analysis
+- Failed tests will show assertion details and stack traces
+
+### Available Test Classes
+
+**Unit Tests (CheckBoxTests)**:
+- `CheckBoxTests.m`: Basic checkbox functionality tests
+- `GroupTests.m`: Radio button group functionality tests
+- `AnimationManagerTests.m`: Animation behavior tests
+
+**UI Tests (CheckBoxUITests)**:
+- `CheckBoxUITests.m`: End-to-end UI interaction tests
+
+### Troubleshooting
+
+- If tests fail to start, ensure the iOS Simulator is available and iOS 18.0+ is installed
+- For "No such device" errors, check available simulators with: `xcrun simctl list devices`
+- Test timeouts may occur on slower machines - increase timeout with `-test-timeout` flag
 
 ## Installation Methods
 
