@@ -69,17 +69,13 @@ xcodebuild -sdk iphonesimulator \
 swift build \
   --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.0.sdk \
   -Xswiftc -target \
-  -Xswiftc x86_64-apple-ios18.0-simulator \
-  -Xswiftc -swift-version \
-  -Xswiftc 5
+  -Xswiftc x86_64-apple-ios18.0-simulator
 
 # Release build for iOS Simulator
 swift build -c release \
   --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.0.sdk \
   -Xswiftc -target \
-  -Xswiftc x86_64-apple-ios18.0-simulator \
-  -Xswiftc -swift-version \
-  -Xswiftc 5
+  -Xswiftc x86_64-apple-ios18.0-simulator
 ```
 
 ##### iOS Device (arm64)
@@ -89,17 +85,13 @@ swift build -c release \
 swift build \
   --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk \
   -Xswiftc -target \
-  -Xswiftc arm64-apple-ios18.0 \
-  -Xswiftc -swift-version \
-  -Xswiftc 5
+  -Xswiftc arm64-apple-ios18.0
 
 # Release build for iOS Device
 swift build -c release \
   --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk \
   -Xswiftc -target \
-  -Xswiftc arm64-apple-ios18.0 \
-  -Xswiftc -swift-version \
-  -Xswiftc 5
+  -Xswiftc arm64-apple-ios18.0
 ```
 
 ##### Build Artifacts
@@ -112,7 +104,7 @@ Build artifacts are located in:
 
 ##### Important Notes for Swift Package Manager
 
-1. **Swift Version**: Uses Swift 5 language mode to avoid Swift 6 strict concurrency issues
+1. **Swift Version**: Package.swift is configured to use Swift 5 language mode to avoid Swift 6 strict concurrency issues
 2. **SDK Versions**: Update SDK paths if using different Xcode versions (check with `xcodebuild -showsdks`)
 3. **No Tests**: Swift Package Manager tests are not available as this is an iOS-only library requiring simulator/device
 4. **Architecture**: Specify target architecture explicitly for each platform

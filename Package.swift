@@ -10,6 +10,13 @@ let package = Package(
         .library(name: "BEMCheckBox", targets: ["BEMCheckBox"])
     ],
     targets: [
-        .target(name: "BEMCheckBox", dependencies: [], path: "Classes")
+        .target(
+            name: "BEMCheckBox",
+            dependencies: [],
+            path: "Classes",
+            swiftSettings: [
+                .swiftLanguageMode(.v5)
+            ]
+        )
     ]
 )
