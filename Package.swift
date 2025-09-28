@@ -1,15 +1,22 @@
-// swift-tools-version:5.1
+// swift-tools-version:6.0
 import PackageDescription
 
 let package = Package(
     name: "BEMCheckBox",
     platforms: [
-       .iOS(.v8)
+       .iOS(.v18)
     ],
     products: [
         .library(name: "BEMCheckBox", targets: ["BEMCheckBox"])
     ],
     targets: [
-        .target(name: "BEMCheckBox", dependencies: [], path: "Classes")
+        .target(
+            name: "BEMCheckBox",
+            dependencies: [],
+            path: "Classes",
+            swiftSettings: [
+                .swiftLanguageMode(.v5)
+            ]
+        )
     ]
 )

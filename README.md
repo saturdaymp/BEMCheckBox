@@ -35,7 +35,7 @@ A quick example of the checkbox in action.
 <p align="center"><img src="./.assets/BEMCheckBox.gif"/></p>	
 
 ### Requirements
- - Requires iOS 12 or later.
+ - Requires iOS 18 or later.
  - Requires Automatic Reference Counting (ARC).
  - Optimized for ARM64 Architecture.
 
