@@ -199,6 +199,12 @@ public class BEMCheckBox: UIControl, CAAnimationDelegate {
         backgroundColor = UIColor.clear
 
         addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleTapCheckBox(_:))))
+
+        // Accessibility support
+        isAccessibilityElement = true
+        accessibilityLabel = "Checkbox"
+        accessibilityTraits = .button
+        updateAccessibilityValue()
     }
     
     public override var frame: CGRect {
@@ -247,13 +253,20 @@ public class BEMCheckBox: UIControl, CAAnimationDelegate {
         if notifyGroup {
             group?.notifyCheckBoxSelectionChanged(self)
         }
+
+        updateAccessibilityValue()
     }
     
     /** Set the state of the check box to On or Off, optionally animating the  */
     @objc public func setOn(_ on: Bool, animated: Bool = false) {
         setOn(on, animated: animated, notifyGroup: false)
     }
-    
+
+    // MARK: Accessibility
+    private func updateAccessibilityValue() {
+        accessibilityValue = on ? "Checked" : "Unchecked"
+    }
+
     // MARK: Gesture Recognizer
     @objc func handleTapCheckBox(_ recognizer: UITapGestureRecognizer?) {
         // If we have a group that requires a selection, and we're already selected, don't allow a deselection

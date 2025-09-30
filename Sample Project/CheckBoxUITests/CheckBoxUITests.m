@@ -27,14 +27,22 @@
 }
 
 - (void)testOn {
-    XCUIElement *element = [[[[[[[[XCUIApplication alloc] init].otherElements containingType:XCUIElementTypeNavigationBar identifier:@"BEMCheckBox"] childrenMatchingType:XCUIElementTypeOther].element childrenMatchingType:XCUIElementTypeOther].element childrenMatchingType:XCUIElementTypeOther].element childrenMatchingType:XCUIElementTypeOther] elementBoundByIndex:1];    
-    XCTAssertTrue(element.isHittable);
-    
-    [element tap];
-    XCTAssertTrue(element.isHittable);
-    
-    [element tap];
-    XCTAssertTrue(element.isHittable);
+    XCUIApplication *app = [[XCUIApplication alloc] init];
+
+    // Find checkbox by accessibility label with a more reliable query
+    XCUIElement *checkbox = [app.buttons matchingIdentifier:@"Checkbox"].firstMatch;
+
+    // Wait for the element to be hittable
+    XCTAssertTrue([checkbox waitForExistenceWithTimeout:5]);
+    XCTAssertTrue(checkbox.isHittable, @"Checkbox should be hittable");
+
+    // Test tapping on checkbox
+    [checkbox tap];
+    XCTAssertTrue(checkbox.isHittable, @"Checkbox should remain hittable after first tap");
+
+    // Test tapping again
+    [checkbox tap];
+    XCTAssertTrue(checkbox.isHittable, @"Checkbox should remain hittable after second tap");
 }
 
 @end
