@@ -1,9 +1,13 @@
 ## v2.1.0 (Jan, 16, 2024)
 
 
-As part of this release we had [2 issues](https://github.com/saturdaymp/BEMCheckBox/milestone/2?closed=1) closed.
+As part of this release we had [3 issues](https://github.com/saturdaymp/BEMCheckBox/milestone/2?closed=1) closed.
 
 
+
+__Breaking__
+
+- [__!14__](https://github.com/saturdaymp/BEMCheckBox/pull/14) Update minimum iOS version to 18
 
 __DevOps__
 
@@ -50,9 +54,7 @@ Added new delegate and BEMCheckBoxDelegate protocol used to receive check box ev
 
 
 First stable release of **BEMCheckBox**
-ll Changelog](https://github.com/Boris-Em/BEMCheckBox/compare/1.0.0...1.1.0)
- 
-Added new delegate and BEMCheckBoxDelegate protocol used to receive check box events.
+Delegate protocol used to receive check box events.
 ## 1.0.0 (Oct, 10, 2015)
 
 
