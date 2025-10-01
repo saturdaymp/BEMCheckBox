@@ -6,7 +6,7 @@ permissions:
 
 on:
   push:
-    branches: [ main, release/* ]
+    branches: [ release/* ]
   pull_request:
     branches: [ main, release/* ]
 
@@ -57,4 +57,3 @@ jobs:
         with:
           commit_message: Committing auto generated change log.
           file_pattern: CHANGELOG.md
-          push_options: --force
