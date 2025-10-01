@@ -1,7 +1,7 @@
 ## v2.1.0 (Jan, 16, 2024)
 
 
-As part of this release we had [3 issues](https://github.com/saturdaymp/BEMCheckBox/milestone/2?closed=1) closed.
+As part of this release we had [4 issues](https://github.com/saturdaymp/BEMCheckBox/milestone/2?closed=1) closed.
 
 
 
@@ -13,6 +13,10 @@ __DevOps__
 
 - [__!12__](https://github.com/saturdaymp/BEMCheckBox/pull/12) Update macOS and GitHub Action Versions in CI
 - [__!13__](https://github.com/saturdaymp/BEMCheckBox/pull/13) Update GitVersion
+
+__enhancement__
+
+- [__!15__](https://github.com/saturdaymp/BEMCheckBox/pull/15) Add accessibility support for BEMCheckBox
 
 ## v2.0.0 (Aug, 3, 2023)
 
@@ -54,12 +58,7 @@ Added new delegate and BEMCheckBoxDelegate protocol used to receive check box ev
 
 
 First stable release of **BEMCheckBox**
-Delegate protocol used to receive check box events.
-## 1.0.0 (Oct, 10, 2015)
-
-
-First stable release of **BEMCheckBox**
-sed to receive check box events.
+ to receive check box events.
 ## 1.0.0 (Oct, 10, 2015)
 
 
