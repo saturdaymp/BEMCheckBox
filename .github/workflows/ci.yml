@@ -34,15 +34,18 @@ jobs:
           updateProjectFiles: true
 
       - name: Show SDKS
-        run: xcodebuild -showsdks
+        run: |
+          xcodebuild -showsdks
+          xcrun simctl list devices
 
       - name: Run Unit Tests
         run: |
           xcodebuild test \
             -project "Sample Project/CheckBox.xcodeproj" \
             -scheme CheckBoxTests \
-            -destination 'platform=iOS Simulator,name=iPhone 16' \
+            -destination 'platform=iOS Simulator,OS=18.5,name=iPhone 16' \
             -resultBundlePath TestResults
+        timeout-minutes: 10
 
       # In XCode 12 it will build the simulator with a arm64 CPU.  We don't want this as when
       # we try to combine the simulator with the device build using Lipo we will get an error
