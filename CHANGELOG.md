@@ -1,7 +1,7 @@
 ## v2.1.0 (Jan, 16, 2024)
 
 
-As part of this release we had [4 issues](https://github.com/saturdaymp/BEMCheckBox/milestone/2?closed=1) closed.
+As part of this release we had [5 issues](https://github.com/saturdaymp/BEMCheckBox/milestone/2?closed=1) closed.
 
 
 
@@ -13,6 +13,7 @@ __DevOps__
 
 - [__!12__](https://github.com/saturdaymp/BEMCheckBox/pull/12) Update macOS and GitHub Action Versions in CI
 - [__!13__](https://github.com/saturdaymp/BEMCheckBox/pull/13) Update GitVersion
+- [__!17__](https://github.com/saturdaymp/BEMCheckBox/pull/17) Fix release notes action error on main branch
 
 __enhancement__
 
@@ -54,11 +55,6 @@ This is the last official release from [Boris-Em](https://github.com/Boris-Em). 
 [Full Changelog](https://github.com/Boris-Em/BEMCheckBox/compare/1.0.0...1.1.0)
  
 Added new delegate and BEMCheckBoxDelegate protocol used to receive check box events.
-## 1.0.0 (Oct, 10, 2015)
-
-
-First stable release of **BEMCheckBox**
- to receive check box events.
 ## 1.0.0 (Oct, 10, 2015)
 
 
