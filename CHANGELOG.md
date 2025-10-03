@@ -1,7 +1,7 @@
 ## v2.1.0 (Jan, 16, 2024)
 
 
-As part of this release we had [6 issues](https://github.com/saturdaymp/BEMCheckBox/milestone/2?closed=1) closed.
+As part of this release we had [8 issues](https://github.com/saturdaymp/BEMCheckBox/milestone/2?closed=1) closed.
 
 
 
@@ -15,10 +15,15 @@ __DevOps__
 - [__!13__](https://github.com/saturdaymp/BEMCheckBox/pull/13) Update GitVersion
 - [__!17__](https://github.com/saturdaymp/BEMCheckBox/pull/17) Fix release notes action error on main branch
 - [__!19__](https://github.com/saturdaymp/BEMCheckBox/pull/19) Fix unit test timeout issue in GitHub Actions
+- [__!20__](https://github.com/saturdaymp/BEMCheckBox/pull/20) Prevent release notes generation on main branch push
 
 __enhancement__
 
 - [__!15__](https://github.com/saturdaymp/BEMCheckBox/pull/15) Add accessibility support for BEMCheckBox
+
+__Refactoring__
+
+- [__!16__](https://github.com/saturdaymp/BEMCheckBox/pull/16) Remove Travis and Cocopods config
 
 ## v2.0.0 (Aug, 3, 2023)
 

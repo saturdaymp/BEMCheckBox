@@ -9,6 +9,7 @@ issue-labels-include:
   - dependency
   - documentation
   - enhancement
+  - refactoring
   - security
 
 issue-labels-alias:
@@ -35,6 +36,10 @@ issue-labels-alias:
   - name: feature
     header: Feature
     plural: Feature
+
+  - name: refactoring
+    header: Refactoring
+    plural: Refactoring
 
   - name: security
     header: Security
