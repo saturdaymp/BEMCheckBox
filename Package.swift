@@ -13,7 +13,6 @@ let package = Package(
         .target(
             name: "BEMCheckBox",
             dependencies: [],
-            path: "Classes",
             swiftSettings: [
                 .swiftLanguageMode(.v5)
             ]
