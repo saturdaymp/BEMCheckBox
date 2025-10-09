@@ -1,7 +1,7 @@
 ## v2.1.0 (Jan, 16, 2024)
 
 
-As part of this release we had [10 issues](https://github.com/saturdaymp/BEMCheckBox/milestone/2?closed=1) closed.
+As part of this release we had [11 issues](https://github.com/saturdaymp/BEMCheckBox/milestone/2?closed=1) closed.
 
 The user-facing changes in this release are:
 
@@ -24,6 +24,7 @@ __DevOps__
 - [__!19__](https://github.com/saturdaymp/BEMCheckBox/pull/19) Fix unit test timeout issue in GitHub Actions
 - [__!20__](https://github.com/saturdaymp/BEMCheckBox/pull/20) Prevent release notes generation on main branch push
 - [__!22__](https://github.com/saturdaymp/BEMCheckBox/pull/22) Add 'refactoring' label to Git Release Manager config
+- [__!24__](https://github.com/saturdaymp/BEMCheckBox/pull/24) Fix the generated version for release branches
 
 __Documentation__
 
