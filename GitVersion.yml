@@ -1,6 +1,8 @@
 workflow: GitHubFlow/v1
+semantic-version-format: Loose
 branches:
   main:
     increment: Minor
   release:
-    increment: Inherit
+    prevent-increment:
+      when-current-commit-tagged: true
