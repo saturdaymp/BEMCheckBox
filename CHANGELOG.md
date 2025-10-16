@@ -1,7 +1,7 @@
 ## v2.1.0 (Jan, 16, 2024)
 
 
-As part of this release we had [12 issues](https://github.com/saturdaymp/BEMCheckBox/milestone/2?closed=1) closed.
+As part of this release we had [13 issues](https://github.com/saturdaymp/BEMCheckBox/milestone/2?closed=1) closed.
 
 The user-facing changes in this release are:
 
@@ -26,6 +26,7 @@ __DevOps__
 - [__!22__](https://github.com/saturdaymp/BEMCheckBox/pull/22) Add 'refactoring' label to Git Release Manager config
 - [__!27__](https://github.com/saturdaymp/BEMCheckBox/pull/27) Add release branch configuration to prevent increment when current commit is tagged
 - [__!28__](https://github.com/saturdaymp/BEMCheckBox/pull/28) Readd GitReleaseManager setup for tag-based releases
+- [__!29__](https://github.com/saturdaymp/BEMCheckBox/pull/29) Update CI permissions for artifact uploads
 
 __Documentation__
 
