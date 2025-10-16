@@ -66,11 +66,11 @@ It only takes a few simple steps to install and setup **BEMCheckBox** to your pr
 Add `https://github.com/saturdaymp/BEMCheckBox` as a dependency to your Package.swift file or select `File -> Swift Packages -> Add Package Dependency...` in Xcode.
 
 #### CocoaPods
-Note: The latest version on CocoaPods is [v1.4.1](https://cocoapods.org/pods/BEMCheckBox) by [Boris-Em](https://github.com/Boris-Em).  If you would like me to push a new version please open an [issue](https://github.com/saturdaymp/BEMCheckBox/issues) or [pull request](https://github.com/saturdaymp/BEMCheckBox/pulls).
+Note: The latest version on CocoaPods is [v1.4.1](https://cocoapods.org/pods/BEMCheckBox) by [Boris-Em](https://github.com/Boris-Em).  CocoaPods is being [deprecated](https://blog.cocoapods.org/CocoaPods-Specs-Repo/) so there are no plans to add new versions of BEMCheckBox to it.
 
-The easiest way to install **BEMCheckBox** is to use <a href="http://cocoapods.org/" target="_blank">CocoaPods</a>. To do so, simply add the following line to your `Podfile`:
+To install BEMCheckBox using CocoaPods add the following line to your `Podfile`:
+
 	<pre><code>pod 'BEMCheckBox'</code></pre>
-
 
 #### Carthage
 [Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks.
