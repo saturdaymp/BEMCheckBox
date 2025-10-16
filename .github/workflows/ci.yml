@@ -86,7 +86,6 @@ jobs:
           name: BEMCheckBox-v${{ steps.gitversion.outputs.majorMinorPatch }}.framework
           path: Release-fat/BEMCheckBox.framework
 
-
       # Required to add the binary to the GitHub release.
       - name: Install GitReleaseManager
         if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/')
