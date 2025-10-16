@@ -1,9 +1,16 @@
 ## v2.1.0 (Jan, 16, 2024)
 
 
-As part of this release we had [8 issues](https://github.com/saturdaymp/BEMCheckBox/milestone/2?closed=1) closed.
+As part of this release we had [9 issues](https://github.com/saturdaymp/BEMCheckBox/milestone/2?closed=1) closed.
 
+The user-facing changes in this release are:
 
+- Added accessibility features to the checkbox.  Please ping me if you they don't work and/or can be improved.
+- Updated the minimum iOS version from 12 to 18.
+
+Developer facing changes:
+
+- Updated from Swift 5 to 6 but use Swift 5 compatibility mode for now.
 
 __Breaking__
 
@@ -16,6 +23,7 @@ __DevOps__
 - [__!17__](https://github.com/saturdaymp/BEMCheckBox/pull/17) Fix release notes action error on main branch
 - [__!19__](https://github.com/saturdaymp/BEMCheckBox/pull/19) Fix unit test timeout issue in GitHub Actions
 - [__!20__](https://github.com/saturdaymp/BEMCheckBox/pull/20) Prevent release notes generation on main branch push
+- [__!22__](https://github.com/saturdaymp/BEMCheckBox/pull/22) Add 'refactoring' label to Git Release Manager config
 
 __enhancement__
 
