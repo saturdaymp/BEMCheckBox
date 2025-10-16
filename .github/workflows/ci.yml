@@ -1,8 +1,7 @@
 name: CI
 
 permissions:
-  contents: read
-  pull-requests: write
+  contents: write  # Required to upload artifacts for tag builds
 
 on:
   push:
