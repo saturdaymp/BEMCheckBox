@@ -86,6 +86,14 @@ jobs:
           name: BEMCheckBox-v${{ steps.gitversion.outputs.majorMinorPatch }}.framework
           path: Release-fat/BEMCheckBox.framework
 
+
+      # Required to add the binary to the GitHub release.
+      - name: Install GitReleaseManager
+        if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/')
+        uses: gittools/actions/gitreleasemanager/setup@51d325634925d7d9ce0a7efc2c586c0bc2b9eee6 #v3.2.1
+        with:
+          versionSpec: '0.20.0'
+
       # Only update to the release on a tag push.  Assume the release exists by the
       # time we create the tag.  Also we need to create the zip as uploading to the release
       # does not automatically zip the file.
