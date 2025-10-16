@@ -2,3 +2,6 @@ workflow: GitHubFlow/v1
 branches:
   main:
     increment: Minor
+  release:
+    prevent-increment:
+      when-current-commit-tagged: true
