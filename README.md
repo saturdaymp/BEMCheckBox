@@ -66,7 +66,7 @@ It only takes a few simple steps to install and setup **BEMCheckBox** to your pr
 Add `https://github.com/saturdaymp/BEMCheckBox` as a dependency to your Package.swift file or select `File -> Swift Packages -> Add Package Dependency...` in Xcode.
 
 #### CocoaPods
-Note: The latest version on CocoaPods is [v1.4.1](https://cocoapods.org/pods/BEMCheckBox) by [Boris-Em](https://github.com/Boris-Em).  CocoaPods is being [deprecated](https://blog.cocoapods.org/CocoaPods-Specs-Repo/) so there is no plans to add new versions of BEMCheckBox to it.
+Note: The latest version on CocoaPods is [v1.4.1](https://cocoapods.org/pods/BEMCheckBox) by [Boris-Em](https://github.com/Boris-Em).  CocoaPods is being [deprecated](https://blog.cocoapods.org/CocoaPods-Specs-Repo/) so there are no plans to add new versions of BEMCheckBox to it.
 
 To install BEMCheckBox using CocoaPods add the following line to your `Podfile`:
 
