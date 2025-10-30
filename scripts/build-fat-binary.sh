@@ -29,6 +29,11 @@ BUILD_DIR="build"
 OUTPUT_DIR="Release-fat"
 CONFIGURATION="Release"
 CLEAN_BUILD=false
+ARCHIVE_DIR="Temp/Archives/"
+IOS_SIMULATOR_ARCHIVE_DIR="$ARCHIVE_DIR/BEMCheckBox-iOS_Simulator"
+IOS_SIMULATOR_ARCHIVE_PATH="$IOS_SIMULATOR_ARCHIVE_DIR.xcarchive"
+IOS_ARCHIVE_DIR="$ARCHIVE_DIR/BEMCheckBox-iOS"
+IOS_ARHIVE_PATH="$IOS_ARCHIVE_DIR.xcarchive"
 
 # Colors for output
 RED='\033[0;31m'
@@ -145,28 +150,25 @@ if [ "$CLEAN_BUILD" = true ]; then
     print_success "Cleaned build directories"
 fi
 
-# Build for iOS Simulator
-print_header "Building for iOS Simulator (x86_64)"
-print_info "Excluding arm64 to avoid conflicts with device build"
+# Clearn up previous archives
+rm -rf "$ARCHIVE_DIR"
 
-xcodebuild -sdk iphonesimulator \
+# Build for iOS Simulator
+print_header "Building for iOS Simulator"
+xcodebuild archive \
     -project "$PROJECT_PATH" \
-    -derivedDataPath "$BUILD_DIR" \
     -scheme "$SCHEME" \
+    -destination "generic/platform=iOS Simulator" \
     -configuration "$CONFIGURATION" \
-    EXCLUDED_ARCHS="arm64"
+    -derivedDataPath "$BUILD_DIR" \
+    -archivePath "$IOS_SIMULATOR_ARCHIVE_DIR" \
 
 print_success "iOS Simulator build completed"
 echo ""
-echo "Listing: $BUILD_DIR/Build/Products/$CONFIGURATION-iphonesimulator"
-ls -la "$BUILD_DIR/Build/Products/$CONFIGURATION-iphonesimulator"
-echo ""
-echo "Listing: $BUILD_DIR/Build/Products/$CONFIGURATION-iphonesimulator/BEMCheckBox.framework"
-ls -la "$BUILD_DIR/Build/Products/$CONFIGURATION-iphonesimulator/BEMCheckBox.framework"
-echo ""
-echo "Architecture info:"
-lipo -info "$BUILD_DIR/Build/Products/$CONFIGURATION-iphonesimulator/BEMCheckBox.framework/BEMCheckBox"
-echo ""
+echo "Listing: $IOS_SIMULATOR_ARCHIVE_PATH"
+ls -laR "$IOS_SIMULATOR_ARCHIVE_PATH"
+
+exit 0
 
 # Build for iOS Device
 print_header "Building for iOS Device (arm64)"
