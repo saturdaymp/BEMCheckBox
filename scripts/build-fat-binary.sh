@@ -33,7 +33,7 @@ ARCHIVE_DIR="Temp/Archives/"
 IOS_SIMULATOR_ARCHIVE_DIR="$ARCHIVE_DIR/BEMCheckBox-iOS_Simulator"
 IOS_SIMULATOR_ARCHIVE_PATH="$IOS_SIMULATOR_ARCHIVE_DIR.xcarchive"
 IOS_ARCHIVE_DIR="$ARCHIVE_DIR/BEMCheckBox-iOS"
-IOS_ARHIVE_PATH="$IOS_ARCHIVE_DIR.xcarchive"
+IOS_ARCHIVE_PATH="$IOS_ARCHIVE_DIR.xcarchive"
 
 # Colors for output
 RED='\033[0;31m'
@@ -168,28 +168,22 @@ echo ""
 echo "Listing: $IOS_SIMULATOR_ARCHIVE_PATH"
 ls -laR "$IOS_SIMULATOR_ARCHIVE_PATH"
 
-exit 0
-
-# Build for iOS Device
-print_header "Building for iOS Device (arm64)"
-
-xcodebuild -sdk iphoneos \
+# Build for iOS device
+print_header "Building for iOS device"
+xcodebuild archive \
     -project "$PROJECT_PATH" \
-    -derivedDataPath "$BUILD_DIR" \
     -scheme "$SCHEME" \
-    -configuration "$CONFIGURATION"
+    -destination "generic/platform=iOS" \
+    -configuration "$CONFIGURATION" \
+    -derivedDataPath "$BUILD_DIR" \
+    -archivePath "$IOS_ARCHIVE_DIR" \
 
-print_success "iOS Device build completed"
+print_success "iOS device build completed"
 echo ""
-echo "Listing: $BUILD_DIR/Build/Products/$CONFIGURATION-iphoneos"
-ls -la "$BUILD_DIR/Build/Products/$CONFIGURATION-iphoneos"
-echo ""
-echo "Listing: $BUILD_DIR/Build/Products/$CONFIGURATION-iphoneos/BEMCheckBox.framework"
-ls -la "$BUILD_DIR/Build/Products/$CONFIGURATION-iphoneos/BEMCheckBox.framework"
-echo ""
-echo "Architecture info:"
-lipo -info "$BUILD_DIR/Build/Products/$CONFIGURATION-iphoneos/BEMCheckBox.framework/BEMCheckBox"
-echo ""
+echo "Listing: $IOS_ARCHIVE_PATH"
+ls -laR "$IOS_ARCHIVE_PATH"
+
+exit 0
 
 # Combine Builds
 print_header "Combining Builds"
