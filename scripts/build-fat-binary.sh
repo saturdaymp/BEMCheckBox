@@ -26,7 +26,7 @@ set -o pipefail  # Catch errors in pipes
 PROJECT_PATH="Sample Project/CheckBox.xcodeproj"
 SCHEME="BEMCheckBox"
 BUILD_DIR="build"
-OUTPUT_DIR="Release-fat"
+OUTPUT_DIR="Temp/Release-fat"
 CONFIGURATION="Release"
 CLEAN_BUILD=false
 ARCHIVE_DIR="Temp/Archives/"
@@ -152,6 +152,7 @@ fi
 
 # Clearn up previous archives
 rm -rf "$ARCHIVE_DIR"
+rm -rf "$OUTPUT_DIR"
 
 # Build for iOS Simulator
 print_header "Building for iOS Simulator"
@@ -182,6 +183,18 @@ print_success "iOS device build completed"
 echo ""
 echo "Listing: $IOS_ARCHIVE_PATH"
 ls -laR "$IOS_ARCHIVE_PATH"
+
+# Combine the builds into a XCFramework bundle
+print_header "Creating XCFramework Bundle"
+xcodebuild -create-xcframework \
+    -archive "$IOS_SIMULATOR_ARCHIVE_PATH" -framework "BEMCheckBox.framework" \
+    -archive "$IOS_ARCHIVE_PATH" -framework "BEMCheckBox.framework" \
+    -output "$OUTPUT_DIR/BEMCheckBox.xcframework"
+
+print_success "XCFramework bundle created successfully"
+echo ""
+print_info "Output location: $OUTPUT_DIR/BEMCheckBox.xcframework"
+ls -laR "$OUTPUT_DIR/BEMCheckBox.xcframework"
 
 exit 0
 
