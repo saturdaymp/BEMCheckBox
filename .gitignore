@@ -68,3 +68,6 @@ fastlane/test_output
 
 .build/
 .vscode/
+
+# Temp folder for build artifacts
+Temp/

@@ -163,6 +163,8 @@ xcodebuild archive \
     -configuration "$CONFIGURATION" \
     -derivedDataPath "$BUILD_DIR" \
     -archivePath "$IOS_SIMULATOR_ARCHIVE_DIR" \
+    SKIP_INSTALL=NO \
+    BUILD_LIBRARY_FOR_DISTRIBUTION=YES
 
 print_success "iOS Simulator build completed"
 echo ""
@@ -178,6 +180,8 @@ xcodebuild archive \
     -configuration "$CONFIGURATION" \
     -derivedDataPath "$BUILD_DIR" \
     -archivePath "$IOS_ARCHIVE_DIR" \
+    SKIP_INSTALL=NO \
+    BUILD_LIBRARY_FOR_DISTRIBUTION=YES
 
 print_success "iOS device build completed"
 echo ""
