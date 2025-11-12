@@ -1,4 +1,4 @@
-## v2.1.0 (Jan, 16, 2024)
+## v2.1.0 (Oct, 16, 2025)
 
 
 As part of this release we had [13 issues](https://github.com/saturdaymp/BEMCheckBox/milestone/2?closed=1) closed.
