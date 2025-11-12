@@ -7,7 +7,7 @@
 # iOS Simulator and iOS Device platforms.
 #
 # Usage:
-#   ./scripts/build-xcframework.sh [--help]
+#   ./Scripts/build-xcframework.sh [--help]
 #
 # Output:
 #   Temp/Release-fat/BEMCheckBox.xcframework
@@ -67,7 +67,7 @@ This script builds a universal XCFramework that works on both
 iOS Simulator and iOS Device platforms.
 
 USAGE:
-    ./scripts/build-xcframework.sh [--help]
+    ./Scripts/build-xcframework.sh [--help]
 
 OUTPUT:
     Temp/Release-fat/BEMCheckBox.xcframework

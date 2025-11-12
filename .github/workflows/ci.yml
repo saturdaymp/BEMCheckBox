@@ -49,9 +49,9 @@ jobs:
       - name: Build XCFramework
         run: ./Scripts/build-xcframework.sh
 
-      # Upload the directory, not a zip file, as uploading an artificate will automatically zip it
+      # Upload the directory, not a zip file, as uploading an artifact will automatically zip it
       # and we don't want a zip in a zip.
-      - name: Upload Build Artificates to GitHub Workflow
+      - name: Upload Build Artifacts to GitHub Workflow
         uses: actions/upload-artifact@v4
         with:
           name: BEMCheckBox-v${{ steps.gitversion.outputs.majorMinorPatch }}.xcframework
