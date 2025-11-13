@@ -1,3 +1,14 @@
+## v2.2.0 (Nov, 13, 2025)
+
+
+As part of this release we had [1 issue](https://github.com/saturdaymp/BEMCheckBox/milestone/3?closed=1) closed.
+
+Update from Fat32 binary to XCFramework
+
+__enhancement__
+
+- [__!30__](https://github.com/saturdaymp/BEMCheckBox/pull/30) Build XCFramework instead of Fat32 binary
+
 ## v2.1.0 (Oct, 16, 2025)
 
 
