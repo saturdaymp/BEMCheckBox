@@ -46,7 +46,7 @@ A quick example of the checkbox in action.
 Open an [issue](https://github.com/saturdaymp/BEMCheckBox/issues) if you have a question, spot a bug, or have a feature request.  [Pull requests](https://github.com/saturdaymp/BEMCheckBox/pulls) are welcome and much appreciated.  Finally you can send an email to [support@saturdaymp.com](support@saturdaymp.com).
 
 ### Sample App
-The iOS Sample App included with this project demonstrates one way to correctly setup and use **BEMCheckBox**. Written in Objective-C, it showcases the library's Objective-C compatibility and offers the ability to customize the checkbox interactively within the app. The sample app is located in the `Sample Project/` directory.
+The iOS Sample App included with this project demonstrates how to setup and use **BEMCheckBox** in Objective-C.  There is currently no example project for Swift but hopefully one will be added in the future.  The sample app is located in the `Sample Project/` directory.
 
 ### React Native  
 **BEMCheckBox** can be used with React Native: [React-Native-BEMCheckBox](https://github.com/torifat/react-native-bem-check-box)
@@ -58,7 +58,7 @@ The iOS Sample App included with this project demonstrates one way to correctly 
 **BEMCheckBox** can also be used with Xamarin: [XPlugins.iOS.BEMCheckBox](https://github.com/saturdaymp/XPlugins.iOS.BEMCheckBox)
 
 ## Getting Started
-It only takes a few simple steps to install and setup **BEMCheckBox** to your project.
+There are several ways to install and use **BEMCheckBox** into your project.
 
 ### Installation
 
