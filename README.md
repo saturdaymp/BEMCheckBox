@@ -1,21 +1,17 @@
 # BEMCheckBox
 [![CI](https://github.com/saturdaymp/BEMCheckBox/actions/workflows/ci.yml/badge.svg)](https://github.com/saturdaymp/BEMCheckBox/actions/workflows/ci.yml)
-[![Release Notes](https://github.com/saturdaymp/BEMCheckBox/actions/workflows/release-notes.yml/badge.svg)](https://github.com/saturdaymp/BEMCheckBox/actions/workflows/release-notes.yml)
 [![GitHub Sponsors](https://img.shields.io/github/sponsors/saturdaymp?label=Sponsors&logo=githubsponsors&labelColor=3C444C)](https://github.com/sponsors/saturdaymp)
 
 <p align="center"><img src="./.assets/BEMCheckBox logo.jpg"/></p>	
 
 **BEMCheckBox** is an open source library making it easy to create beautiful, highly customizable, animated checkboxes for iOS.
 
-This is a fork of the original [Boris-EM/BEMCheckBox](https://github.com/Boris-Em/BEMCheckBox) repository, maintained and updated for modern iOS development. The library has been modernized with Swift 6.0+, iOS 18+ support, XCFramework distribution, and automated CI/CD workflows while maintaining the elegant API and functionality of the original project.
-
-Thanks to [Boris-Em](https://github.com/Boris-Em) for creating this excellent library! Please feel free to contribute by creating an [issue](https://github.com/saturdaymp/BEMCheckBox/issues) or a [pull request](https://github.com/saturdaymp/BEMCheckBox/pulls).
+This is a fork of the original [Boris-EM/BEMCheckBox](https://github.com/Boris-Em/BEMCheckBox) repository. Thanks to [Boris-Em](https://github.com/Boris-Em) for creating this excellent library! Please feel free to contribute by creating an [issue](https://github.com/saturdaymp/BEMCheckBox/issues) or a [pull request](https://github.com/saturdaymp/BEMCheckBox/pulls).
 
 ## Table of Contents
 
 * [**Project Details**](#project-details)
   * [Requirements](#requirements)
-  * [License](#license)
   * [Support](#support)
   * [Sample App](#sample-app)
   * [React Native](#react-native)
@@ -45,9 +41,6 @@ A quick example of the checkbox in action.
 - **Xcode 16+** - Development environment (tested with Xcode 26.0.1)
 - **Automatic Reference Counting (ARC)**
 - **Architectures**: ARM64 (device), ARM64 + x86_64 (simulator)
-
-### License
-See the [License](LICENSE). You are free to make changes and use this in either personal or commercial projects. Attribution is not required, but highly appreciated. A little "Thanks!" (or something to that effect) is always welcome for either [Saturday MP](https://github.com/saturdaymp) and/or [Boris-EM](https://github.com/Boris-Em). If you use **BEMCheckBox** in your app, please let us know!
 
 ### Support
 Open an [issue](https://github.com/saturdaymp/BEMCheckBox/issues) if you have a question, spot a bug, or have a feature request.  [Pull requests](https://github.com/saturdaymp/BEMCheckBox/pulls) are welcome and much appreciated.  Finally you can send an email to [support@saturdaymp.com](support@saturdaymp.com).
