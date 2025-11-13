@@ -69,10 +69,10 @@
 		5643F12B1CDE722C0020E238 /* BEMCheckBox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BEMCheckBox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5643F12D1CDE722C0020E238 /* CheckBox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheckBox.h; sourceTree = "<group>"; };
 		5643F12F1CDE722C0020E238 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5B677ED123F2B168007FBFC2 /* BEMPathManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BEMPathManager.swift; path = ../Classes/BEMPathManager.swift; sourceTree = "<group>"; };
-		5B677ED223F2B168007FBFC2 /* BEMCheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BEMCheckBox.swift; path = ../Classes/BEMCheckBox.swift; sourceTree = "<group>"; };
-		5B677ED323F2B168007FBFC2 /* BEMAnimationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BEMAnimationManager.swift; path = ../Classes/BEMAnimationManager.swift; sourceTree = "<group>"; };
-		5B677ED423F2B168007FBFC2 /* BEMCheckBoxGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BEMCheckBoxGroup.swift; path = ../Classes/BEMCheckBoxGroup.swift; sourceTree = "<group>"; };
+		5B677ED123F2B168007FBFC2 /* BEMPathManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BEMPathManager.swift; path = ../Sources/BEMCheckBox/BEMPathManager.swift; sourceTree = "<group>"; };
+		5B677ED223F2B168007FBFC2 /* BEMCheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BEMCheckBox.swift; path = ../Sources/BEMCheckBox/BEMCheckBox.swift; sourceTree = "<group>"; };
+		5B677ED323F2B168007FBFC2 /* BEMAnimationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BEMAnimationManager.swift; path = ../Sources/BEMCheckBox/BEMAnimationManager.swift; sourceTree = "<group>"; };
+		5B677ED423F2B168007FBFC2 /* BEMCheckBoxGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BEMCheckBoxGroup.swift; path = ../Sources/BEMCheckBox/BEMCheckBoxGroup.swift; sourceTree = "<group>"; };
 		C325370D1B9231780059F394 /* CheckBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C32537111B9231780059F394 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C32537121B9231780059F394 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };

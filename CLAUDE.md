@@ -14,11 +14,12 @@ BEMCheckBox is an open-source iOS checkbox library that provides beautiful, high
 
 ```
 BEMCheckBox/
-├── Classes/                     # Swift source files for the main library
-│   ├── BEMCheckBox.swift        # Main checkbox implementation
-│   ├── BEMCheckBoxGroup.swift   # Radio button group functionality
-│   ├── BEMAnimationManager.swift # Animation handling
-│   └── BEMPathManager.swift     # Path drawing utilities
+├── Sources/                     # Swift Package Manager source directory
+│   └── BEMCheckBox/             # Swift source files for the main library
+│       ├── BEMCheckBox.swift        # Main checkbox implementation
+│       ├── BEMCheckBoxGroup.swift   # Radio button group functionality
+│       ├── BEMAnimationManager.swift # Animation handling
+│       └── BEMPathManager.swift     # Path drawing utilities
 ├── Sample Project/              # Example iOS application (Objective-C)
 │   ├── CheckBox.xcodeproj/      # Xcode project file
 │   ├── CheckBox/                # Example app source code
@@ -246,7 +247,7 @@ Note: The latest CocoaPods version is v1.4.1 from the original repository
 Add to Cartfile and run `carthage update`
 
 ### Manual
-Copy the `Classes` folder directly into your Xcode project
+Copy the `Sources/BEMCheckBox` folder directly into your Xcode project
 
 ## Development Setup
 
@@ -305,7 +306,7 @@ xcodebuild clean -project "Sample Project/CheckBox.xcodeproj" -scheme BEMCheckBo
 ### Generate Documentation
 ```bash
 # If using jazzy for documentation
-jazzy --module BEMCheckBox --source-directory Classes/
+jazzy --module BEMCheckBox --source-directory Sources/BEMCheckBox/
 ```
 
 ### Check Swift Version
