@@ -203,8 +203,6 @@ xcodebuild test \
 - **GroupTests**: Radio button group functionality (group selection, mustHaveSelection behavior)
 - **AnimationManagerTests**: Animation behavior tests
 
-For more detailed build and test instructions, see [AGENTS.md](AGENTS.md).
-
 ## Documentation
 All of the methods and properties available for **BEMCheckBox** are documented below.
 
