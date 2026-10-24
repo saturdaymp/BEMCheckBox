@@ -24,9 +24,9 @@ BEMCheckBox/
 │   ├── BEMCheckBox/             # Framework header files
 │   ├── CheckBox/                # Example app source code
 │   ├── CheckBoxTests/           # Unit tests
-│   │   ├── CheckBoxTests.m      # Basic checkbox functionality tests
-│   │   ├── GroupTests.m         # Radio button group tests
-│   │   └── AnimationManangerTests.m # Animation tests
+│   │   ├── CheckBoxTests.swift    # Basic checkbox functionality tests
+│   │   ├── GroupTests.swift       # Radio button group tests
+│   │   └── AnimationManangerTests.swift # Animation tests
 │   └── CheckBoxUITests/         # UI tests
 │       └── CheckBoxUITests.m    # UI interaction tests
 ├── Scripts/                     # Build automation scripts
@@ -250,9 +250,9 @@ xcodebuild test \
 ### Available Test Classes
 
 **Unit Tests (CheckBoxTests)**:
-- `CheckBoxTests.m`: Basic checkbox functionality tests (initialization, setters, default values)
-- `GroupTests.m`: Radio button group functionality tests (group selection, mustHaveSelection behavior)
-- `AnimationManangerTests.m`: Animation behavior tests (typo in filename is intentional - actual file name)
+- `CheckBoxTests.swift`: Basic checkbox functionality tests (initialization, setters, default values)
+- `GroupTests.swift`: Radio button group functionality tests (group selection, mustHaveSelection behavior)
+- `AnimationManangerTests.swift`: Animation behavior tests (typo in filename is intentional - actual file name)
 
 **UI Tests (CheckBoxUITests)**:
 - `CheckBoxUITests.m`: End-to-end UI interaction tests
