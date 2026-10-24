@@ -10,7 +10,7 @@
         <!--Delegate-->
         <scene sceneID="ovb-nr-Et5">
             <objects>
-                <viewController id="T4m-fZ-8sp" customClass="BEMMainViewController" sceneMemberID="viewController">
+                <viewController id="T4m-fZ-8sp" customClass="BEMMainViewController" customModule="CheckBox" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="c0G-4a-NZX"/>
                         <viewControllerLayoutGuide type="bottom" id="3Fk-oQ-eFr"/>
@@ -180,7 +180,7 @@
         <!--Animations-->
         <scene sceneID="bEg-Ax-VmN">
             <objects>
-                <tableViewController title="Animations" id="cmS-0S-drb" customClass="BEMAnimationsTableViewController" sceneMemberID="viewController">
+                <tableViewController title="Animations" id="cmS-0S-drb" customClass="BEMAnimationsTableViewController" customModule="CheckBox" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="elG-eu-i4n">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -325,7 +325,7 @@
         <!--Current Set-up-->
         <scene sceneID="Ovf-bh-mWP">
             <objects>
-                <tableViewController title="Current Set-up" id="aaU-ZW-zFu" customClass="BEMCurrentSetupTableViewController" sceneMemberID="viewController">
+                <tableViewController title="Current Set-up" id="aaU-ZW-zFu" customClass="BEMCurrentSetupTableViewController" customModule="CheckBox" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="bg6-xi-CXh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
