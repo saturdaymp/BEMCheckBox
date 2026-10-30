@@ -17,10 +17,10 @@
 		C325371C1B9231780059F394 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C325371A1B9231780059F394 /* Main.storyboard */; };
 		C325371E1B9231780059F394 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C325371D1B9231780059F394 /* Images.xcassets */; };
 		C32537211B9231780059F394 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C325371F1B9231780059F394 /* LaunchScreen.xib */; };
-		C325372D1B9231780059F394 /* CheckBoxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C325372C1B9231780059F394 /* CheckBoxTests.m */; };
+		C325372D1B9231780059F394 /* CheckBoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C325372C1B9231780059F394 /* CheckBoxTests.swift */; };
 		C39F1AB71BAFEAA400E8A023 /* BEMMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39F1AB61BAFEAA400E8A023 /* BEMMainViewController.swift */; };
-		C3C066E61DB7002C00178397 /* GroupTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C066E51DB7002C00178397 /* GroupTests.m */; };
-		C3DFB9BA1BBA475B00D2F8B4 /* AnimationManangerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3DFB9B91BBA475B00D2F8B4 /* AnimationManangerTests.m */; };
+		C3C066E61DB7002C00178397 /* GroupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C066E51DB7002C00178397 /* GroupTests.swift */; };
+		C3DFB9BA1BBA475B00D2F8B4 /* AnimationManangerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DFB9B91BBA475B00D2F8B4 /* AnimationManangerTests.swift */; };
 		C3DFB9BD1BBD0E2800D2F8B4 /* BEMAnimationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DFB9BC1BBD0E2800D2F8B4 /* BEMAnimationsTableViewController.swift */; };
 		C3E594901BC220C7005EA38B /* BEMCurrentSetupTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E5948F1BC220C7005EA38B /* BEMCurrentSetupTableViewController.swift */; };
 		FC76C2451D7A121200EE3AA4 /* CheckBoxUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC76C2441D7A121200EE3AA4 /* CheckBoxUITests.m */; };
@@ -80,10 +80,10 @@
 		C32537201B9231780059F394 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		C32537261B9231780059F394 /* CheckBoxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CheckBoxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C325372B1B9231780059F394 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C325372C1B9231780059F394 /* CheckBoxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheckBoxTests.m; sourceTree = "<group>"; };
+		C325372C1B9231780059F394 /* CheckBoxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxTests.swift; sourceTree = "<group>"; };
 		C39F1AB61BAFEAA400E8A023 /* BEMMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BEMMainViewController.swift; sourceTree = "<group>"; };
-		C3C066E51DB7002C00178397 /* GroupTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupTests.m; sourceTree = "<group>"; };
-		C3DFB9B91BBA475B00D2F8B4 /* AnimationManangerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationManangerTests.m; sourceTree = "<group>"; };
+		C3C066E51DB7002C00178397 /* GroupTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupTests.swift; sourceTree = "<group>"; };
+		C3DFB9B91BBA475B00D2F8B4 /* AnimationManangerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationManangerTests.swift; sourceTree = "<group>"; };
 		C3DFB9BC1BBD0E2800D2F8B4 /* BEMAnimationsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BEMAnimationsTableViewController.swift; sourceTree = "<group>"; };
 		C3E5948F1BC220C7005EA38B /* BEMCurrentSetupTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BEMCurrentSetupTableViewController.swift; sourceTree = "<group>"; };
 		FC76C2421D7A121200EE3AA4 /* CheckBoxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CheckBoxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -190,9 +190,9 @@
 		C32537291B9231780059F394 /* CheckBoxTests */ = {
 			isa = PBXGroup;
 			children = (
-				C325372C1B9231780059F394 /* CheckBoxTests.m */,
-				C3C066E51DB7002C00178397 /* GroupTests.m */,
-				C3DFB9B91BBA475B00D2F8B4 /* AnimationManangerTests.m */,
+				C325372C1B9231780059F394 /* CheckBoxTests.swift */,
+				C3C066E51DB7002C00178397 /* GroupTests.swift */,
+				C3DFB9B91BBA475B00D2F8B4 /* AnimationManangerTests.swift */,
 				C325372A1B9231780059F394 /* Supporting Files */,
 			);
 			path = CheckBoxTests;
@@ -422,9 +422,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3C066E61DB7002C00178397 /* GroupTests.m in Sources */,
-				C325372D1B9231780059F394 /* CheckBoxTests.m in Sources */,
-				C3DFB9BA1BBA475B00D2F8B4 /* AnimationManangerTests.m in Sources */,
+				C3C066E61DB7002C00178397 /* GroupTests.swift in Sources */,
+				C325372D1B9231780059F394 /* CheckBoxTests.swift in Sources */,
+				C3DFB9BA1BBA475B00D2F8B4 /* AnimationManangerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -714,6 +714,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "BEM.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CheckBox.app/CheckBox";
 			};
 			name = Debug;
@@ -733,6 +734,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "BEM.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CheckBox.app/CheckBox";
 			};
 			name = Release;
